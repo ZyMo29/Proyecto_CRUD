@@ -1,0 +1,19 @@
+<h2> Detalle del amigo:</h2>
+<ul>
+<li>Numero: {{model.id}}</li>
+<li>Nombre: {{model.firstName}}</li>
+<li>Apellido: {{model.lastName}} </li>
+<li>Correo: {{model.email}}</li>
+<li>Red-social: {{model.twitter}}</li>
+</ul>
+{{#link-to 'friends'}}
+	<button>
+		volver
+	</button>
+{{/link-to}}
+{{#link-to 'friends.edir' model}}
+<button>
+	Editarrrrrr
+</button>
+
+{{/link-to}}

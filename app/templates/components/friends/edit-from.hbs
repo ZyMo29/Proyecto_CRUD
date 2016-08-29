@@ -1,0 +1,26 @@
+<p>{{model.firstName}}</p>
+<p>{{model.email}}</p>
+<form {{action 'guardar' on='submit'}}> 
+		<p> 
+		  <label> Nombre:
+		  {{input value=model.firstName}}</label>
+
+		</p>
+		<p> 
+		  <label> Apellido:
+		  {{input value=model.lastName}}</label>
+		  
+		</p>
+		<p> 
+		  <label> Correo:
+		  {{input value=model.email}}</label>
+		  
+		</p>
+		<p> 
+		  <label> Twitter:
+		  {{input value=model.twitter}}</label>
+		  
+		</p>
+		<input type="submit" value="Guardar Amigo">
+		<button {{action 'cancel'}} > Cancelar </button>
+</form>

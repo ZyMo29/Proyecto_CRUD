@@ -1,0 +1,12 @@
+<h1>LISTA DE AMIGOS </h1>
+{{#link-to 'friends.new'}}
+<button> Crear nuevo amigo</button>
+{{/link-to}}
+
+	{{#each model as |friend|}}
+	<p>{{link-to friend.firstName 'friends.show' friend}}
+	<button {{action 'delete'}}> B O R R A R </button>
+	</p>
+
+	{{/each}}
+{{outlet}}
